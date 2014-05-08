@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>EmberConf 2014</title>
+
+  <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+  <meta name="author" content="Alex Brinkman">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="css/reveal.min.css">
+  <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+  <!-- For syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+  <script>
+  if (window.location.search.match(/print-pdf/gi)) {
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'css/print/pdf.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  }
+  </script>
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+      <section>
+        <h1>Ember Conf 2014</h1>
+      </section>
+
+      <section>
+        <h2>Advanced Ember: Persistence</h2>
+        <h3>(Preconference Training)</h3>
+        <p><small>Yehuda Katz & Tom Dale</small></p>
+        <ul>
+          <li>Handrolled Ember Data</li>
+          <li>Resolver</li>
+          <li>Excercises From Training</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Opening Keynote</h2>
+        <p><small>Yehuda Katz & Tom Dale</small></p>
+        * Being first EmberConf, set the stage for the feel of the community.
+      </section>
+
+      <section>
+        <h2>Contributing to Ember: The Inside Scoop</h2>
+        <p><small>Robert Jackson</small></p>
+        * Rules for commit messages * Have a test * Bad Error Messages/Bad Documentation are Bugs *
+        <link>
+      </section>
+
+      <section>
+        <h2>Ember Data and the Way Forward</h2>
+        <p><small>Igor Terzic</small></p>
+        * Ember data is made up of many small, easy to moderate problems that alone are easy to solve, but together are hard. Trying to get the primitives right. * Simplifying API * Developers know what data they want to save * Had its own promise library * Both asynch and non-asynch * Single source of truth for relationships
+      </section>
+
+      <section>
+        <h2>No More 'grunt watch': Build Modern Workflows with Broccoli</h2>
+        <p><small>Jo Liss</small></p>
+        * Only knows trees of files, reads and writes directories * Constant time compilation * Component of Ember CLI * Asset pipeline-ish ???
+      </section>
+
+      <section>
+        <h2>Modeling the App Store and iTunes with Ember Data (Fnd.io)</h2>
+        <p><small>Jeremy Mack</small></p>
+        * Fast * Makes use of Ember Data
+      </section>
+
+      <section>
+        <h2>HTMLBars - The Next-Generation of Templating in Ember.js - Erik Bryn & Kris Selden</h2>
+        * Builds a DOM rather than a large string. * More natural syntax for element attribute binding * No more metamorph * Fast (at least 30% faster) * Drop in replacement? * Erik said on Discuss recently that it would be available for the 1.8 release around 6/17.
+      </section>
+
+      <section>
+        <h2>The {{x-foo}} in You (Components) - Ryan Florence</h2>
+        * ES6 Spec??? * Node copter * Component Libraries
+      </section>
+
+      <section>
+        <h2>Ember CLI - Stef Penner</h2>
+        * Brings generators, testing, server, modules, package management. * Similar to Ember App Kit but hopefully easier to upgrade.
+      </section>
+
+      <section>
+        <h2>Ember is for the Children - DaVaris Brown</h2>
+        * Inspiring talk, best crowd response of the entire conference. * Potential opportunity for the meetup.
+      </section>
+
+      <section>
+        <h2>The Unofficial, Official Ember Testing Guide - Eric Berry</h2>
+        * Qunit is the anointed one, but that will change over time to be more agnostic. * New test helpers as of 1.5 * currentRouteName * currentPath * currentURL
+      </section>
+
+      <section>
+        <h2>Controlling Route Traversal with Flows - Nathan Hammond</h2>
+        * Thinking a bit deeper about resources, flows
+      </section>
+
+      <section>
+        <h2>Snappy Means Happy: Performance in Ember Apps - Matthew Beale</h2>
+      </section>
+
+      <section>
+        <h2>Closing Keynote - Dave Herman</h2>
+      </section>
+
+    </div>
+
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.min.js"></script>
+
+  <script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+
+    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+    transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+    // Optional libraries used to extend on reveal.js
+    dependencies: [{
+      src: 'lib/js/classList.js',
+      condition: function() {
+        return !document.body.classList;
+      }
+    }, {
+      src: 'plugin/markdown/marked.js',
+      condition: function() {
+        return !!document.querySelector('[data-markdown]');
+      }
+    }, {
+      src: 'plugin/markdown/markdown.js',
+      condition: function() {
+        return !!document.querySelector('[data-markdown]');
+      }
+    }, {
+      src: 'plugin/highlight/highlight.js',
+      async: true,
+      callback: function() {
+        hljs.initHighlightingOnLoad();
+      }
+    }, {
+      src: 'plugin/zoom-js/zoom.js',
+      async: true,
+      condition: function() {
+        return !!document.body.classList;
+      }
+    }, {
+      src: 'plugin/notes/notes.js',
+      async: true,
+      condition: function() {
+        return !!document.body.classList;
+      }
+    }]
+  });
+  </script>
+
+</body>
+
+</html>
