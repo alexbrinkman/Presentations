@@ -74,9 +74,13 @@
         </p>
         <ul>
           <li>Rules for commit messages</li>
-          <li>Have a test</li>
-          <li>Bad error messages & documentation are bugs</li>
-          <link>
+          <ul>
+            <li>[DOC] - Bad error messages & documentation are bugs!</li>
+            <li>[BUGFIX] - Needs a test showing regression</li>
+            <li>[FEATURE] - Feature flags</li>
+          </ul>
+          <li>Security protocol</li>
+        </ul>
       </section>
 
       <section>
@@ -86,13 +90,12 @@
         </p>
         <ul>
           <li>Ember data is made up of many small, easy to moderate problems that alone are easy to solve, but together are hard.</li>
-          <li>Trying to get the primitives right.</li>
+          <li>Trying to get the primitives right</li>
           <li>Simplifying API</li>
           <ul>
             <li>Developers know what data they want to save</li>
             <li>Had its own promise library</li>
             <li>Both async and non-async</li>
-            <li>Single source of truth for relationships</li>
           </ul>
         </ul>
       </section>
@@ -129,9 +132,12 @@
         <ul>
           <li>Builds a DOM rather than a large string.</li>
           <li>More natural syntax for element attribute binding</li>
+          <ul>
+            <li><code> {{bind-attr class="foo"}}</code></li>
+            <li><code> class="{{foo}}"</code></li>
+          </ul>
           <li>No more metamorph</li>
           <li>At least 30% faster</li>
-          <li>Drop in replacement?</li>
           <li>Erik said on Discuss recently that it would be available for the 1.8 release around 6/17/14</li>
         </ul>
       </section>
