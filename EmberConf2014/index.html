@@ -45,6 +45,7 @@
       </section>
 
       <section>
+        <!-- DONE -->
         <h2>Advanced Ember: Persistence</h2>
         <h3>(Preconference Training)</h3>
         <p>
@@ -53,6 +54,10 @@
         <ul>
           <li>Handrolled Ember Data</li>
           <li>Resolver</li>
+            <ul>
+              <li>ES6 Module Transpiler</li>
+              <li>ES6 Module Syntax -> AMD, CommonJS, Browser Globals</li>
+            </ul>
           <li><a href="https://github.com/tildetraining/advanced-training-emberconf-2014">Excercises from training</a></li>
         </ul>
       </section>
@@ -68,6 +73,7 @@
       </section>
 
       <section>
+        <!-- DONE -->
         <h2>Contributing to Ember: The Inside Scoop</h2>
         <p>
           <small>Robert Jackson</small>
@@ -75,15 +81,20 @@
         <ul>
           <li>Rules for commit messages</li>
           <ul>
-            <li>[DOC] - Bad error messages & documentation are bugs!</li>
-            <li>[BUGFIX] - Needs a test showing regression</li>
-            <li>[FEATURE] - Feature flags</li>
+            <li>[DOC release] - Bad error messages & documentation are bugs!</li>
+            <li>[BUGFIX beta] - Needs a test showing regression</li>
+            <li>[FEATURE new-great-feature] - Feature flags</li>
           </ul>
-          <li>Security protocol</li>
+          <li>Security protocol: security@emberjs.com</li>
+          <ul>
+            <li>security@emberjs.com</li>
+            <li><a href="http://emberjs.com/security">emberjs.com/security</a></li>
+          </ul>
         </ul>
       </section>
 
       <section>
+        <!-- DONE -->
         <h2>Ember Data and the Way Forward</h2>
         <p>
           <small>Igor Terzic</small>
@@ -95,18 +106,22 @@
           <ul>
             <li>Developers know what data they want to save</li>
             <li>Had its own promise library</li>
-            <li>Both async and non-async</li>
+            <li>All relationships are async</li>
+            <li>Single source of truth</li>
           </ul>
         </ul>
+        <!-- http://emberjs.com/blog/2014/03/18/the-road-to-ember-data-1-0.html -->
       </section>
 
       <section>
+        <!-- DONE -->
         <h2>No More 'grunt watch': Build Modern Workflows with Broccoli</h2>
         <p>
           <small>Jo Liss</small>
         </p>
         <ul>
-          <li>Only knows trees of files, reads and writes directories</li>
+          <li>Grunt files get complicated quickly for real-world apps</li>
+          <li>Broccoli Only knows trees of files, reads and writes directories</li>
           <li>Constant time compilation</li>
           <li>Component of Ember CLI</li>
           <li>Asset pipeline-ish</li>
@@ -114,6 +129,7 @@
       </section>
 
       <section>
+        <!-- DONE -->
         <h2>Modeling the App Store and iTunes with Ember Data (Fnd.io)</h2>
         <p>
           <small>Jeremy Mack</small>
@@ -125,6 +141,7 @@
       </section>
 
       <section>
+        <!-- DONE -->
         <h2>HTMLBars - The Next-Generation of Templating in Ember.js</h2>
         <p>
           <small>Erik Bryn & Kris Selden</small>
@@ -162,8 +179,9 @@
       </section>
 
       <section>
+        <!-- DONE -->
         <h2>Ember is for the Children</h2>
-        <p><small>DaVaris Brown</small></p>
+        <p><small>DeVaris Brown</small></p>
         <ul>
           <li>Inspiring talk, best crowd response of the entire conference.</li>
           <li>Potential opportunity for the meetup.</li>
@@ -171,27 +189,37 @@
       </section>
 
       <section>
+        <!-- DONE -->
         <h2>The Unofficial, Official Ember Testing Guide</h2>
         <p><small>Eric Berry</small><p>
         <ul>
-          <li>Qunit is the anointed one, but that will change over time to be more agnostic.</li>
+          <li>QUnit is the anointed one, but that will change over time to be more agnostic.</li>
           <li>New test helpers as of 1.5</li>
           <ul>
-            <li>currentRouteName, currentPath, currentURL</li>
+            <li>triggerEvent(), currentRouteName(), currentPath(), currentURL()</li>
           </ul>
+          <li>Ember-Qunit: A library to allows writing unit tests without loading entire container</li>
+          <ul>
+            <li>Works with modules and globals</li>
+            <li>Routes, Controllers, Components</li>
+          </ul>
+
         </ul>
       </section>
 
       <section>
+        <!-- DONE -->
         <h2>Controlling Route Traversal with Flows</h2>
         <p><small>Nathan Hammond</small></p>
         <ul>
           <li>Advice for complicated route traversal/flows</li>
           <li><a href="https://github.com/nathanhammond/ember-flows-generator">Ember Flows Generator</a></li>
+          <li>Flows were also mentioned in the opening keynote, as a point of design.</li>
         </ul>
       </section>
 
       <section>
+        <!-- DONE -->
         <h2>Closing Keynote</h2>
         <p><small>Dave Herman</small></p>
         <ul>
