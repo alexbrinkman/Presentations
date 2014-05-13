@@ -37,7 +37,6 @@
 
   <div class="reveal">
 
-    <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides">
 
       <section>
@@ -45,20 +44,19 @@
       </section>
 
       <section>
-        <!-- DONE -->
         <h2>Advanced Ember: Persistence</h2>
         <h3>(Preconference Training)</h3>
         <p>
           <small>Yehuda Katz & Tom Dale</small>
         </p>
         <ul>
-          <li>Handrolled Ember Data</li>
+          <li>Hand-rolled Ember Data</li>
           <li>Resolver</li>
             <ul>
               <li>ES6 Module Transpiler</li>
               <li>ES6 Module Syntax -> AMD, CommonJS, Browser Globals</li>
             </ul>
-          <li><a href="https://github.com/tildetraining/advanced-training-emberconf-2014">Excercises from training</a></li>
+          <li><a href="https://github.com/tildetraining/advanced-training-emberconf-2014">Exercises from training</a></li>
         </ul>
       </section>
 
@@ -68,12 +66,22 @@
           <small>Yehuda Katz & Tom Dale</small>
         </p>
         <ul>
-          <li>Set the stage for the expectations and feel of the community</li>
+          <li>Set the stage for the expectations and feel of the community - inclusive and welcoming</li>
+          <!-- Bree Thomas at Denver.rb -->
+          <li>Commitment to Semantic Versioning</li>
+          <ul>
+            <li>Feature Flags</li>
+          </ul>
+          <li>The goal of Ember is to be powerful enough to handle the tasks that are the same, yet
+            flexible enough to allow you to handle the tasks that are unique.</li>
+          <ul>
+            <li>Flows</li>
+            <li>10x productivity boost</li>
+          </ul>
         </ul>
       </section>
 
       <section>
-        <!-- DONE -->
         <h2>Contributing to Ember: The Inside Scoop</h2>
         <p>
           <small>Robert Jackson</small>
@@ -85,7 +93,7 @@
             <li>[BUGFIX beta] - Needs a test showing regression</li>
             <li>[FEATURE new-great-feature] - Feature flags</li>
           </ul>
-          <li>Security protocol: security@emberjs.com</li>
+          <li>Security protocol</li>
           <ul>
             <li>security@emberjs.com</li>
             <li><a href="http://emberjs.com/security">emberjs.com/security</a></li>
@@ -94,7 +102,6 @@
       </section>
 
       <section>
-        <!-- DONE -->
         <h2>Ember Data and the Way Forward</h2>
         <p>
           <small>Igor Terzic</small>
@@ -114,48 +121,45 @@
       </section>
 
       <section>
-        <!-- DONE -->
         <h2>No More 'grunt watch': Build Modern Workflows with Broccoli</h2>
         <p>
           <small>Jo Liss</small>
         </p>
         <ul>
-          <li>Grunt files get complicated quickly for real-world apps</li>
-          <li>Broccoli Only knows trees of files, reads and writes directories</li>
+          <li>Grunt files get complicated quickly for real-world apps.</li>
+          <li>Broccoli only knows trees of files, reads and writes directories.</li>
           <li>Constant time compilation</li>
           <li>Component of Ember CLI</li>
-          <li>Asset pipeline-ish</li>
         </ul>
       </section>
 
       <section>
-        <!-- DONE -->
-        <h2>Modeling the App Store and iTunes with Ember Data (Fnd.io)</h2>
+        <h2>Modeling the App Store and iTunes with Ember Data 
+          <a href="https://fnd.io">(Fnd.io)</a></h2>
         <p>
           <small>Jeremy Mack</small>
         </p>
         <ul>
           <li>Fast!</li>
-          <li>Makes use of Ember Data</li>
+          <li>Uses Ember Data</li>
         </ul>
       </section>
 
       <section>
-        <!-- DONE -->
         <h2>HTMLBars - The Next-Generation of Templating in Ember.js</h2>
         <p>
           <small>Erik Bryn & Kris Selden</small>
         </p>
         <ul>
-          <li>Builds a DOM rather than a large string.</li>
           <li>More natural syntax for element attribute binding</li>
           <ul>
             <li><code> {{bind-attr class="foo"}}</code></li>
             <li><code> class="{{foo}}"</code></li>
           </ul>
-          <li>No more metamorph</li>
+          <li>No more metamorph!</li>
           <li>At least 30% faster</li>
-          <li>Erik said on Discuss recently that it would be available for the 1.8 release around 6/17/14</li>
+          <li>Builds a DOM rather than a large string</li>
+          <li>Erik said on Discuss recently that it would be available for the 1.8 release around 6/17/14.</li>
         </ul>
       </section>
 
@@ -163,9 +167,24 @@
         <h2>The {{x-foo}} in You (Components)</h2>
         <p><small>Ryan Florence</small></p>
         <ul>
-          <li>ES6 Spec (???)</li>
-          <li>Node copter</li>
-          <li>Component Libraries</li>
+          <li>Examples</li>
+          <ul>
+            <li>Anchor tag example</li>
+            <li>Node copter</li>
+          </ul>
+          <li>Benefits</li>
+          <ul>
+            <li>Declarative: data binding + actions</li>
+            <li>Self documenting: easy for others to use</li>
+          </ul>
+          <li>Advice</li>
+          <ul>
+            <li>Use small components to make up larger components, (select-option, submit-form)</li>
+            <li>Test with dynamic data</li>
+          </ul>
+          <li><a href="http://instructure.github.io/ic-ember">Instructure component library</a></li>
+          <li><a href="http://coderberry.me/">Eric Berry's component library</a></li>
+          <li><a href="http://blog.venn.lc/emberui-alpha-release/">Ember UI</a></li>
         </ul>
       </section>
 
@@ -173,23 +192,22 @@
         <h2>Ember CLI</h2>
         <p><small>Stef Penner</small></p>
         <ul>
-          <li>Brings generators, testing, server, modules, package management.</li>
-          <li>Similar to Ember App Kit but hopefully easier to upgrade.</li>
+          <li>Similar to Ember App Kit but hopefully easier to upgrade</li>
+          <li>Brings generators, testing, server, modules, package management, Broccoli</li>
+          <li>Think Rails CLI</li>
         </ul>
       </section>
 
       <section>
-        <!-- DONE -->
         <h2>Ember is for the Children</h2>
         <p><small>DeVaris Brown</small></p>
         <ul>
-          <li>Inspiring talk, best crowd response of the entire conference.</li>
-          <li>Potential opportunity for the meetup.</li>
+          <li>Inspiring talk, best crowd response of the entire conference</li>
+          <li>Potential opportunity for the meetup</li>
         </ul>
       </section>
 
       <section>
-        <!-- DONE -->
         <h2>The Unofficial, Official Ember Testing Guide</h2>
         <p><small>Eric Berry</small><p>
         <ul>
@@ -198,34 +216,30 @@
           <ul>
             <li>triggerEvent(), currentRouteName(), currentPath(), currentURL()</li>
           </ul>
-          <li>Ember-Qunit: A library to allows writing unit tests without loading entire container</li>
+          <li>Ember-Qunit: A library that allows writing unit tests without loading the entire container.</li>
           <ul>
             <li>Works with modules and globals</li>
             <li>Routes, Controllers, Components</li>
           </ul>
-
         </ul>
       </section>
 
       <section>
-        <!-- DONE -->
         <h2>Controlling Route Traversal with Flows</h2>
         <p><small>Nathan Hammond</small></p>
         <ul>
           <li>Advice for complicated route traversal/flows</li>
           <li><a href="https://github.com/nathanhammond/ember-flows-generator">Ember Flows Generator</a></li>
-          <li>Flows were also mentioned in the opening keynote, as a point of design.</li>
         </ul>
       </section>
 
       <section>
-        <!-- DONE -->
         <h2>Closing Keynote</h2>
         <p><small>Dave Herman</small></p>
         <ul>
         	<li>Evolution vs Revolution</li>
         	<li>Revolution: Mozilla releasing source code</li>
-        	<li>Evolution: JavaScript ES6, asm.js</li>
+        	<li>Evolution: JavaScript ES6, ASM.js</li>
         </ul>
       </section>
 
